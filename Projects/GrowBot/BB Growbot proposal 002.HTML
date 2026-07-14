@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowBot — Mobile Smart Gardening Robot</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="p-2 bg-brand-100 text-brand-700 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                    </svg>
+                </span>
+                <span class="text-xl font-bold tracking-tight text-slate-900">GrowBot</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-brand-600 transition">About</a>
+                <a href="#benefits" class="hover:text-brand-600 transition">Benefits</a>
+                <a href="#budget" class="hover:text-brand-600 transition">Budget</a>
+                <a href="#timeline" class="hover:text-brand-600 transition">Timeline</a>
+            </nav>
+            <div>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold bg-brand-100 text-brand-700">
+                    Bizzie Bodies CIC Project
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-slate-50 py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                        ⚡ Funding Proposal: £3,500 Requested
+                    </span>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                        A Mobile Smart Gardening Robot for <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-emerald-600">Sustainable Agriculture</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 max-w-2xl">
+                        Designed, engineered, and coded by secondary school students. GrowBot is a fully mobile, autonomous greenhouse and garden companion that bridges STEM education with real-world ecological responsibility.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#budget" class="px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-lg shadow-md hover:shadow-lg transition">
+                            View Budget Breakdown
+                        </a>
+                        <a href="#about" class="px-6 py-3 bg-white hover:bg-slate-100 text-slate-700 font-semibold rounded-lg border border-slate-200 transition">
+                            Explore Specifications
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none rounded-2xl border-4 border-white bg-slate-100 p-8 shadow-xl aspect-[4/3] flex flex-col justify-between overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-brand-100/40 via-emerald-50/10 to-indigo-100/40"></div>
+                        <div class="relative flex justify-between items-start">
+                            <span class="text-xs uppercase tracking-widest font-bold text-slate-400">Concept Prototype</span>
+                            <span class="px-2.5 py-1 bg-white/80 backdrop-blur rounded text-xs font-mono text-slate-600 border border-slate-200">150cm x 100cm Footprint</span>
+                        </div>
+                        <div class="relative my-auto flex flex-col items-center justify-center text-center space-y-3">
+                            <div class="p-4 bg-emerald-600 text-white rounded-full shadow-lg shadow-emerald-600/20">
+                                <svg class="w-12 h-12" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177V3.75m0 0h-.75m.75 0h3.562c.18 0 .33-.124.358-.302l.228-1.5a.375.375 0 00-.358-.429H13.84a.375.375 0 00-.358.43l.228 1.5c.028.178.178.301.358.301h.75z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-slate-800 text-lg">GrowBot Autonomous Base</h3>
+                            <p class="text-xs text-slate-500 max-w-xs">Equipped with obstacle avoidance sensors, smart water reservoir, and Arduino Mega brain.</p>
+                        </div>
+                        <div class="relative grid grid-cols-3 gap-2 pt-4 border-t border-slate-200/60 text-center">
+                            <div>
+                                <span class="block text-lg font-bold text-brand-600">Active</span>
+                                <span class="text-[10px] uppercase text-slate-400">Irrigation</span>
+                            </div>
+                            <div>
+                                <span class="block text-lg font-bold text-slate-800">100%</span>
+                                <span class="text-[10px] uppercase text-slate-400">Mobile</span>
+                            </div>
+                            <div>
+                                <span class="block text-lg font-bold text-slate-800">Multi</span>
+                                <span class="text-[10px] uppercase text-slate-400">Sensor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">What can GrowBot do?</h2>
+                <p class="text-slate-600">Built as an upgrade to static robotic farming systems, GrowBot navigates autonomously to manage micro-climates across dynamic environments.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Independent Navigation</h3>
+                    <p class="text-sm text-slate-600">Travels autonomously between outdoor growing beds and greenhouses, navigating clearances as narrow as 111cm.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Environmental Telemetry</h3>
+                    <p class="text-sm text-slate-600">Constantly monitors temperature, ambient light levels, atmospheric humidity, and soil moisture.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v13m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Precision Automated Irrigation</h3>
+                    <p class="text-sm text-slate-600">Utilizes a dynamic water-level monitoring system and smart water pump to water targeted plants only when needed.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Obstacle Avoidance</h3>
+                    <p class="text-sm text-slate-600">Integrates ultrasonic sensors that safeguard pathways, students, and valuable crops from physical impact.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Continuous Logging</h3>
+                    <p class="text-sm text-slate-600">Stores historical sensor logs for classrooms to parse, enabling cross-disciplinary data analysis and plant-biology research.</p>
+                </div>
+                <div class="p-6 bg-slate-50 rounded-xl hover:shadow-md transition border border-slate-100 space-y-3">
+                    <span class="inline-block p-3 bg-brand-100 text-brand-700 rounded-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                    </span>
+                    <h3 class="text-lg font-bold text-slate-900">Future-Proof AI Upgrades</h3>
+                    <p class="text-sm text-slate-600">Built to support an onboard camera mount with expandable computing power for computer vision and weed/pest detection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="benefits" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-3xl font-bold text-slate-900 sm:text-4xl">Fostering Skills for the Green Economy</h2>
+                    <p class="text-slate-600">
+                        Our project links hands-on technical literacy directly with natural ecosystems. Students won't just learn theory; they will design CAD assemblies, build active circuits, write automation scripts, and manage real project deliverables.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex gap-4">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold">1</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Multi-disciplinary Engineering</h4>
+                                <p class="text-sm text-slate-600">Combines mechanical design, micro-electronics (Arduino), and modern coding with core biological sciences.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-brand-600 text-white flex items-center justify-center text-xs font-bold">2</span>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Community & Environmental Focus</h4>
+                                <p class="text-sm text-slate-600">Supports the school's active local food-growing programs, prompting dialogues on sustainable irrigation and self-sufficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm space-y-6">
+                    <h3 class="text-xl font-bold text-slate-900">Direct Curriculum Alignment</h3>
+                    <div class="divide-y divide-slate-100">
+                        <div class="py-3 flex justify-between items-center">
+                            <span class="font-semibold text-slate-700">Engineering</span>
+                            <span class="text-sm text-slate-500">CAD, Prototyping, Manufacturing</span>
+                        </div>
+                        <div class="py-3 flex justify-between items-center">
+                            <span class="font-semibold text-slate-700">Electronics</span>
+                            <span class="text-sm text-slate-500">Sensor Loops, Motor Controls, Circuits</span>
+                        </div>
+                        <div class="py-3 flex justify-between items-center">
+                            <span class="font-semibold text-slate-700">Computer Science</span>
+                            <span class="text-sm text-slate-500">Arduino, Automation Logic, Logging</span>
+                        </div>
+                        <div class="py-3 flex justify-between items-center">
+                            <span class="font-semibold text-slate-700">Biology & Agriculture</span>
+                            <span class="text-sm text-slate-500">Micro-climates, Water Conservation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="budget" class="py-20 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Proposed Budget Allocation</h2>
+                <p class="text-slate-600">Estimated materials and components total breakdown for full system execution.</p>
+            </div>
+
+            <div class="overflow-hidden border border-slate-200 rounded-xl shadow-sm">
+                <table class="w-full text-left border-collapse">
+                    <thead class="bg-slate-50 text-xs font-bold uppercase tracking-wider text-slate-500 border-b border-slate-200">
+                        <tr>
+                            <th class="px-6 py-4">Item Component / Group</th>
+                            <th class="px-6 py-4 text-right">Estimated Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-sm">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Aluminium Frame, Fasteners & Brackets</td>
+                            <td class="px-6 py-4 text-right text-slate-600">£600</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Motors, Chassis Wheels & Rechargeable Power</td>
+                            <td class="px-6 py-4 text-right text-slate-600">£470</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Arduino Mega, Custom Sensors & Waterproof Enclosure</td>
+                            <td class="px-6 py-4 text-right text-slate-600">£460</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Irrigation Systems, Pumps & Camera Mounts</td>
+                            <td class="px-6 py-4 text-right text-slate-600">£360</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">CAD Filament, Prototyping & Safety (PPE)</td>
+                            <td class="px-6 py-4 text-right text-slate-600">£600</td>
+                        </tr>
+                        <tr class="bg-brand-50/50">
+                            <td class="px-6 py-4 font-semibold text-brand-900">Contingency Fund (Sourcing & Safety margins)</td>
+                            <td class="px-6 py-4 text-right font-semibold text-brand-900">£1,010</td>
+                        </tr>
+                        <tr class="bg-brand-600 text-white font-bold text-base">
+                            <td class="px-6 py-4">Total Requested Funding</td>
+                            <td class="px-6 py-4 text-right">£3,500</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Project Timeline</h2>
+                <p class="text-slate-600">A systematic 20-week execution path from conceptual engineering to live testing.</p>
+            </div>
+
+            <div class="relative border-l-2 border-brand-200 ml-4 space-y-12">
+                <div class="relative pl-8">
+                    <div class="absolute -left-3.5 top-0.5 bg-brand-600 text-white p-1 rounded-full w-7 h-7 flex items-center justify-center font-bold text-xs">
+                        1
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs font-semibold text-brand-600 uppercase">Weeks 1 - 5</span>
+                        <h4 class="text-lg font-bold text-slate-900">Planning & CAD Modelling</h4>
+                        <p class="text-sm text-slate-600">Researching component integrations, finalizing structural layout limits, and assembling detailed digital CAD models.</p>
+                    </div>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute -left-3.5 top-0.5 bg-brand-600 text-white p-1 rounded-full w-7 h-7 flex items-center justify-center font-bold text-xs">
+                        2
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs font-semibold text-brand-600 uppercase">Weeks 6 - 7</span>
+                        <h4 class="text-lg font-bold text-slate-900">Component Procurement</h4>
+                        <p class="text-sm text-slate-600">Acquiring structural framing materials, microcontrollers, pumps, and safety gear.</p>
+                    </div>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute -left-3.5 top-0.5 bg-brand-600 text-white p-1 rounded-full w-7 h-7 flex items-center justify-center font-bold text-xs">
+                        3
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs font-semibold text-brand-600 uppercase">Weeks 8 - 12</span>
+                        <h4 class="text-lg font-bold text-slate-900">Mechanical & Electronic Assembly</h4>
+                        <p class="text-sm text-slate-600">Hands-on student engineering to build the chassis, route electronics, mount components, and secure enclosures.</p>
+                    </div>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute -left-3.5 top-0.5 bg-brand-600 text-white p-1 rounded-full w-7 h-7 flex items-center justify-center font-bold text-xs">
+                        4
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs font-semibold text-brand-600 uppercase">Weeks 13 - 18</span>
+                        <h4 class="text-lg font-bold text-slate-900">Programming, Sensor Calibration & Testing</h4>
+                        <p class="text-sm text-slate-600">Configuring navigation loops, troubleshooting logic, setting sensor triggers, and executing live test-runs inside the greenhouse.</p>
+                    </div>
+                </div>
+                <div class="relative pl-8">
+                    <div class="absolute -left-3.5 top-0.5 bg-brand-600 text-white p-1 rounded-full w-7 h-7 flex items-center justify-center font-bold text-xs">
+                        5
+                    </div>
+                    <div class="space-y-1">
+                        <span class="text-xs font-semibold text-brand-600 uppercase">Weeks 19 - 20</span>
+                        <h4 class="text-lg font-bold text-slate-900">Evaluation & Showcasing</h4>
+                        <p class="text-sm text-slate-600">Assessing success metrics, preparing educational workshops, and demonstrating GrowBot to our wider community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <p class="text-sm">
+                GrowBot Proposal — Engineered and led by the students of <strong class="text-white">Bizzie Bodies CIC</strong> Engineering & Design Technology Department.
+            </p>
+            <p class="text-xs text-slate-500">
+                &copy; 2026 Bizzie Bodies CIC. Designed with sustainability and open STEM education in mind.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
