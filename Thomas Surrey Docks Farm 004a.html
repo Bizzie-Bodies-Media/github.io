@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surrey Docks Farm — Thames Foreshore Trail</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          sand: '#F1ECE1',
+          ink: '#241F1A',
+          brick: '#8B3A2B',
+          brickdark: '#6B2C20',
+          moss: '#3F5245',
+          mosslight: '#5D7365',
+          tan: '#C9A876',
+          water: '#5C7080',
+          bone: '#E5DDC8',
+        },
+        fontFamily: {
+          display: ['"Zilla Slab"', 'serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+      },
+    },
+  }
+</script>
+<style>
+  body { background-color: #F1ECE1; }
+  .strata-band {
+    background-image: repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.035) 0px,
+      rgba(0,0,0,0.035) 2px,
+      transparent 2px,
+      transparent 9px
+    );
+  }
+  .grain {
+    background-image: radial-gradient(rgba(36,31,26,0.08) 0.6px, transparent 0.6px);
+    background-size: 4px 4px;
+  }
+  .lightbox-open { overflow: hidden; }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+</style>
+</head>
+<body class="font-body text-ink antialiased">
+
+  <!-- Collection breadcrumb -->
+  <div class="border-b border-ink/10 bg-sand/95 backdrop-blur sticky top-0 z-40">
+    <div class="max-w-5xl mx-auto px-6 py-3 flex items-center justify-between text-sm">
+      <a href="#" class="flex items-center gap-2 text-ink/70 hover:text-brick transition-colors font-mono uppercase tracking-wide text-xs">
+        <span aria-hidden="true">←</span> Thames Foreshore Trail
+      </a>
+      <span class="font-mono text-xs uppercase tracking-wide text-ink/40">Rotherhithe, SE16</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header class="relative overflow-hidden border-b border-ink/10">
+    <div class="absolute inset-0 grain opacity-40"></div>
+    <div class="max-w-5xl mx-auto px-6 pt-16 pb-14 md:pt-24 md:pb-20 relative">
+      <p class="font-mono text-xs md:text-sm uppercase tracking-[0.2em] text-brick mb-5">South Wharf · River Thames</p>
+      <h1 class="font-display font-semibold text-5xl sm:text-6xl md:text-7xl leading-[0.95] text-ink mb-6">
+        Surrey Docks<br><span class="italic font-normal text-moss">Farm</span>
+      </h1>
+      <p class="max-w-xl text-lg text-ink/70 leading-relaxed">
+        A 2.2-acre working city farm grazing on the ruins of a shipyard, a timber wharf,
+        and a Victorian fever hospital — proof that London's docklands never really stop changing hands.
+      </p>
+      <div class="flex flex-wrap gap-x-8 gap-y-3 mt-9 font-mono text-xs uppercase tracking-wide text-ink/60">
+        <span>Est. 1975</span>
+        <span class="text-ink/30">·</span>
+        <span>Relocated 1986</span>
+        <span class="text-ink/30">·</span>
+        <span>Registered Charity</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Origin story -->
+    <section class="max-w-5xl mx-auto px-6 py-16 md:py-20 grid md:grid-cols-[1fr_2fr] gap-8 md:gap-16">
+      <h2 class="font-display text-2xl md:text-3xl text-moss">Goats on the wasteland</h2>
+      <div class="space-y-4 text-ink/80 leading-relaxed text-[1.05rem]">
+        <p>
+          Surrey Docks Farm began in 1975 as a scrappy goat farm founded by
+          <span class="text-ink font-medium">Hilary Peters</span> on derelict dockland near Greenland Dock —
+          scrubland the goats grazed while the closed docks quietly went to seed around them.
+        </p>
+        <p>
+          In June 1986 the whole operation moved to its present site at South Wharf, the animals led through
+          the streets and along the riverside to mark the occasion. It's a plot with a longer memory than the
+          farm itself: a shipyard recorded as early as 1743, whose original brick wall still forms the farm's
+          northern boundary.
+        </p>
+      </div>
+    </section>
+
+    <!-- Signature: stratigraphy timeline -->
+    <section class="bg-ink text-sand py-16 md:py-20 border-y-4 border-brick">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-tan mb-2">Core sample</p>
+        <h2 class="font-display text-3xl md:text-4xl mb-10">What the site has been</h2>
+
+        <div class="flex flex-col rounded-sm overflow-hidden border border-sand/15">
+          <!-- Layer 1 -->
+          <div class="strata-band flex items-stretch bg-tan/90 text-ink">
+            <div class="w-28 md:w-36 shrink-0 flex items-center justify-center font-mono text-xs md:text-sm py-6 border-r border-ink/15">1743</div>
+            <div class="flex-1 py-6 px-5 md:px-6">
+              <h3 class="font-display font-semibold text-lg md:text-xl">Shipyard</h3>
+              <p class="text-sm md:text-base text-ink/75 mt-1">Wooden sailing ships built on the plot; a chunk of the yard's red brick wall survives as the farm's northern boundary today.</p>
+            </div>
+          </div>
+          <!-- Layer 2 -->
+          <div class="strata-band flex items-stretch bg-mosslight text-sand">
+            <div class="w-28 md:w-36 shrink-0 flex items-center justify-center font-mono text-xs md:text-sm py-6 border-r border-sand/15">1800s</div>
+            <div class="flex-1 py-6 px-5 md:px-6">
+              <h3 class="font-display font-semibold text-lg md:text-xl">Timber wharf</h3>
+              <p class="text-sm md:text-base text-sand/75 mt-1">The shipyard was broken up and the plot became a working timber wharf on the Rotherhithe riverside.</p>
+            </div>
+          </div>
+          <!-- Layer 3 -->
+          <div class="strata-band flex items-stretch bg-brick text-sand">
+            <div class="w-28 md:w-36 shrink-0 flex items-center justify-center font-mono text-xs md:text-sm py-6 border-r border-sand/15">1883–1940</div>
+            <div class="flex-1 py-6 px-5 md:px-6">
+              <h3 class="font-display font-semibold text-lg md:text-xl">Receiving Station</h3>
+              <p class="text-sm md:text-base text-sand/80 mt-1">The Metropolitan Asylums Board's South Wharf Receiving Station transferred smallpox and fever patients by river — then doubled as a WWII Fire Service river station before being bombed in 1940 and left derelict.</p>
+            </div>
+          </div>
+          <!-- Layer 4 -->
+          <div class="strata-band flex items-stretch bg-moss text-sand">
+            <div class="w-28 md:w-36 shrink-0 flex items-center justify-center font-mono text-xs md:text-sm py-6 border-r border-sand/15">1975–86</div>
+            <div class="flex-1 py-6 px-5 md:px-6">
+              <h3 class="font-display font-semibold text-lg md:text-xl">The Farm arrives</h3>
+              <p class="text-sm md:text-base text-sand/75 mt-1">Founded at Greenland Dock, then relocated to South Wharf in 1986 — where it still stands, grazing on all the layers above.</p>
+            </div>
+          </div>
+        </div>
+        <p class="text-xs text-sand/40 font-mono mt-4">Reconstructed from foreshore finds, Heritage Lottery-funded research, and farm archives.</p>
+      </div>
+    </section>
+
+    <!-- Animals -->
+    <section class="max-w-5xl mx-auto px-6 py-16 md:py-20">
+      <p class="font-mono text-xs uppercase tracking-[0.2em] text-brick mb-2">Who lives here</p>
+      <h2 class="font-display text-3xl md:text-4xl text-ink mb-10">The current tenants</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3">
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Goats</p></div>
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Sheep</p></div>
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Pigs</p></div>
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Donkeys</p></div>
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Ferrets</p></div>
+        <div class="bg-bone rounded-sm py-6 text-center border border-ink/10"><p class="font-display text-lg">Bees</p></div>
+      </div>
+    </section>
+
+    <!-- Archive notes -->
+    <section class="bg-bone/60 border-y border-ink/10 py-16 md:py-20">
+      <div class="max-w-5xl mx-auto px-6">
+        <p class="font-mono text-xs uppercase tracking-[0.2em] text-water mb-2">Marginalia</p>
+        <h2 class="font-display text-3xl md:text-4xl text-ink mb-10">Odd notes from the record</h2>
+        <div class="grid sm:grid-cols-2 gap-5">
+
+          <article class="bg-sand rounded-sm p-6 border border-ink/10">
+            <p class="font-mono text-xs text-water mb-2">1979</p>
+            <h3 class="font-display font-semibold text-lg mb-1">Docklandscape</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">Founder Hilary Peters wrote a book about the farm's founding years, chronicling goats grazing on scrubland where the docks once stood.</p>
+          </article>
+
+          <article class="bg-sand rounded-sm p-6 border border-ink/10">
+            <p class="font-mono text-xs text-water mb-2">1983–2003</p>
+            <h3 class="font-display font-semibold text-lg mb-1">A family on-site</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">Education worker Daphne Ferrigan lived and worked at the farm with her family for two decades, running workshops like willow weaving.</p>
+          </article>
+
+          <article class="bg-sand rounded-sm p-6 border border-ink/10">
+            <p class="font-mono text-xs text-water mb-2">2018</p>
+            <h3 class="font-display font-semibold text-lg mb-1">The piglet theft</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">Eleven two-week-old piglets were stolen and never recovered — the community rallied to fund better farm security afterward.</p>
+          </article>
+
+          <article class="bg-sand rounded-sm p-6 border border-ink/10">
+            <p class="font-mono text-xs text-water mb-2">2013–17</p>
+            <h3 class="font-display font-semibold text-lg mb-1">Foreshore finds</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">Volunteer digs with the Thames Discovery Programme surfaced shipyard nails and hundreds of shards of Victorian receiving-station crockery.</p>
+          </article>
+
+          <article class="bg-sand rounded-sm p-6 border border-ink/10 sm:col-span-2">
+            <p class="font-mono text-xs text-water mb-2">2020</p>
+            <h3 class="font-display font-semibold text-lg mb-1">Riverfront Development</h3>
+            <p class="text-sm text-ink/70 leading-relaxed">A new events space, teaching kitchen, and an extended stretch of the Thames Path opened — winning the Mayor's Prize at the New London Awards.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="max-w-5xl mx-auto px-6 py-16 md:py-20" id="gallery">
+      <div class="flex items-end justify-between flex-wrap gap-4 mb-10">
+        <div>
+          <p class="font-mono text-xs uppercase tracking-[0.2em] text-brick mb-2">In pictures</p>
+          <h2 class="font-display text-3xl md:text-4xl text-ink">Gallery</h2>
+        </div>
+        <label for="photo-upload" class="cursor-pointer font-mono text-xs uppercase tracking-wide border border-ink/25 rounded-sm px-4 py-2 hover:bg-ink hover:text-sand transition-colors">
+          + Add photos
+        </label>
+        <input type="file" id="photo-upload" accept="image/*" multiple class="hidden">
+      </div>
+
+      <div id="gallery-grid" class="grid grid-cols-2 md:grid-cols-3 gap-3">
+        <!-- Placeholder gallery items; replace src with real farm photography, or use the "Add photos" control -->
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="South Wharf riverside, with the old shipyard wall visible on the left.">
+          <img src="Assets/farm/imagesa.jpg" alt="Riverside view of the farm at South Wharf" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="464" width="431">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Riverside &amp; shipyard wall</span>
+        </button>
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="Goats in the petting area, the farm's original founding animal.">
+          <img src="Assets/farm/imagesx.jpg" alt="Goats in the petting area" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="452" width="678">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Goats in the petting area</span>
+        </button>
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="Crockery fragments from the old Receiving Station, found on the foreshore.">
+          <img src="Assets/farm/mobile-farm.jpg" alt="Archive crockery fragments found on the foreshore" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="380" width="558">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Foreshore crockery finds</span>
+        </button>
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="The teaching kitchen, part of the 2020 Riverfront Development.">
+          <img src="Assets/farm/imagesxc.jpg" alt="The farm's teaching kitchen" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="481" width="636">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Teaching kitchen, 2020</span>
+        </button>
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="Beehives tucked along the farm's edge.">
+          <img src="Assets/farm/imageso.jpg" alt="Beehives at the farm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="387" width="516">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Beehives</span>
+        </button>
+        <button class="gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10" data-caption="The extended Thames Path along the farm's river frontage.">
+          <img src="Assets/farm/gardening-for-wellbeing.jpg" alt="The Thames Path beside the farm" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" height="979" width="1563">
+          <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">Thames Path frontage</span>
+        </button>
+      </div>
+      <p class="text-xs text-ink/40 font-mono mt-4">&nbsp;</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-sand/70 py-12">
+    <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+      <div>
+        <h3 class="font-display text-2xl text-sand mb-1">Surrey Docks Farm</h3>
+        <p class="text-sm">Rotherhithe Street, London SE16 5ET</p>
+      </div>
+      <div class="font-mono text-xs uppercase tracking-wide space-y-1 text-sand/50">
+        <p>Open daily, 10:00–17:00 (16:00 winter)</p>
+        <p>surreydocksfarm.org.uk</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-ink/90 p-6">
+    <button id="lightbox-close" aria-label="Close" class="absolute top-5 right-6 text-sand text-3xl leading-none hover:text-brick transition-colors">&times;</button>
+    <button id="lightbox-prev" aria-label="Previous photo" class="absolute left-4 md:left-8 text-sand text-3xl hover:text-brick transition-colors">&#8592;</button>
+    <figure class="max-w-3xl w-full">
+      <img id="lightbox-img" src="" alt="" class="w-full max-h-[75vh] object-contain rounded-sm">
+      <figcaption id="lightbox-caption" class="text-sand/80 text-sm font-mono mt-4 text-center"></figcaption>
+    </figure>
+    <button id="lightbox-next" aria-label="Next photo" class="absolute right-4 md:right-8 text-sand text-3xl hover:text-brick transition-colors">&#8594;</button>
+  </div>
+
+<script>
+  // ---- Gallery + lightbox ----
+  const grid = document.getElementById('gallery-grid');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxCaption = document.getElementById('lightbox-caption');
+  let currentIndex = 0;
+
+  function getItems() {
+    return Array.from(grid.querySelectorAll('.gallery-item'));
+  }
+
+  function openLightbox(index) {
+    const items = getItems();
+    if (!items.length) return;
+    currentIndex = (index + items.length) % items.length;
+    const item = items[currentIndex];
+    const img = item.querySelector('img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = item.dataset.caption || '';
+    lightbox.classList.remove('hidden');
+    lightbox.classList.add('flex');
+    document.body.classList.add('lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.classList.add('hidden');
+    lightbox.classList.remove('flex');
+    document.body.classList.remove('lightbox-open');
+  }
+
+  grid.addEventListener('click', (e) => {
+    const item = e.target.closest('.gallery-item');
+    if (!item) return;
+    openLightbox(getItems().indexOf(item));
+  });
+
+  document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+  document.getElementById('lightbox-prev').addEventListener('click', () => openLightbox(currentIndex - 1));
+  document.getElementById('lightbox-next').addEventListener('click', () => openLightbox(currentIndex + 1));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if (lightbox.classList.contains('hidden')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') openLightbox(currentIndex + 1);
+    if (e.key === 'ArrowLeft') openLightbox(currentIndex - 1);
+  });
+
+  // ---- Add your own photos ----
+  const upload = document.getElementById('photo-upload');
+  upload.addEventListener('change', (e) => {
+    const files = Array.from(e.target.files || []);
+    files.forEach((file) => {
+      const url = URL.createObjectURL(file);
+      const btn = document.createElement('button');
+      btn.className = 'gallery-item group relative aspect-[4/3] overflow-hidden rounded-sm bg-tan/30 border border-ink/10';
+      btn.dataset.caption = file.name;
+      btn.innerHTML = `
+        <img src="${url}" alt="${file.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <span class="absolute bottom-0 inset-x-0 bg-ink/70 text-sand text-xs font-mono px-3 py-2 translate-y-full group-hover:translate-y-0 transition-transform">${file.name}</span>
+      `;
+      grid.appendChild(btn);
+    });
+    upload.value = '';
+  });
+</script>
+
+</body>
+</html>
